@@ -1,0 +1,6 @@
+bin/
+.bundle/
+venv/
+*.py[cod]
+.env
+.DS_Store
