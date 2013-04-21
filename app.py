@@ -3,20 +3,17 @@ import os
 from flask import Flask
 
 from utils import set_urls
-
-from flask import request, render_template
-
-def index():
-    return render_template('index.html')
-def about():
-    return render_template('about.html')
-def help():
-    return render_template('help.html')
+from views import *
 
 routes = [
-    ('/', 'index', index),
-    ('/about', 'about', about),
-    ('/help', 'help', help)
+    # Desktop site pages.
+    ('/', 'index', pages.index),
+    ('/about', 'about', pages.about),
+    ('/help', 'help', pages.help),
+    ('/app', 'app', pages.app),
+
+    # API.
+    ('/api/search', 'search', endpoint.search)
 ]
 
 if __name__ == '__main__':

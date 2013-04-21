@@ -32,7 +32,7 @@ guard 'haml',
 end
 
 guard 'haml',
-    :ouput => 'site/templates',
+    :output => 'site/templates',
     :input => 'site/templates',
     :run_at_start => true,
     :force_html => true,

@@ -1,0 +1,27 @@
+!!! 5
+
+%html{:lang => 'en', :manifest => 'app.manifest'}
+    %head
+        %meta{:charset => 'utf-8'}
+        %meta{:name => 'description', :content => ''}
+        %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'}
+
+        %meta{:name => 'apple-mobile-web-app-capable', :content => 'yes'}
+        %meta{:name => 'apple-mobile-web-app-status-bar-style', :content => 'black'}
+        %meta{:name => 'apple-mobile-web-app-title', :content => 'Pulse'}
+
+        %title Pulse
+
+        %link{:href => '/favicon.ico', :rel => 'shortcut icon'}
+        %link{:href => '/static/application.css', :rel => 'stylesheet'}
+
+
+    %body
+        .application
+
+        %script{:src => 'static/application.js'}
+
+        :javascript
+            window.addEventListener('load', function(){
+                Pulse.start();
+            });
