@@ -22,6 +22,13 @@ guard 'sprockets',
     watch(%r{^site/javascript/.*\.js$})
 end
 
+guard 'sprockets',
+    :destination => 'static',
+    :minify => 'yes',
+    :root_file => 'application/Libs/libs.js' do
+    watch(%r{^application/Libs/.*\.js$})
+end
+
 # Compile HAML templates into the Source directory.
 guard 'haml',
     :output => 'application/Source/Templates',
