@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block body %}
+.hero
+    .content
+        .image
+            %img{:src => 'http://placehold.it/400x600'}
+
+        .messaging
+            %h1
+                Public Services.
+                %br/
+                In Your Hands.
+
+            %h2 Discover city services around you with the tap of a button.
+            %h2 Find transit, recreation, culture and more right from your phone.
+
+        .clear
+
+.features-title
+    .left-jag
+
+    %h2
+        %span Meet Pulse
+
+    .right-jag
+
+.meet-n-greet
+    .left.arrow
+        %img{:src => '/static/images/next.png'}
+    .right.arrow
+        %img{:src => '/static/images/next.png'}
+
+    .carousel
+        .section
+            .card-img
+                %img{:src => '/static/images/screenie2.png'}
+
+            .tag-lines
+                %h2 Public Transit
+                %h3 Find bus stops and train stops nearby with the tap of a button.  Up-to-date schedules and arrival times.
+                %h3 Easily find any HSR and GO Transit services in the Hamilton area from your phone.
+
+            .clear
+
+        .section
+            .card-img
+                %img{:src => '/static/images/screenie2.png'}
+
+            .tag-lines
+                %h2 Food Safety Inspections
+                %h3 Quickly find food safety inspections for restaurants all over the city.  Easy access to past inspection reports in the palm of your hand.
+                %h3 Never be in the dark about the safety of a restaurant again, our database of safety inspection reports keeps you safe.
+
+            .clear
+
+        .section
+            .card-img
+                %img{:src => '/static/images/screenie2.png'}
+
+            .tag-lines
+                %h2 Parks & Recreation
+                %h3 Explore the city's greenspaces and recreation facilities.  Find a place to swim, run or picnic nearby.
+                %h3 Full schedules and location for recreation facilities and parks around the city.
+
+            .clear
+
+%ul.more-advantages
+    %li
+        %h4 COMPREHENSIVE
+        %p
+            Pulse works on a broad range of public services.  From transit to parks to food safety reports.
+    %li
+        %h4 CURRENT
+        %p
+            Pulse shows you what's nearby and happening right now.  Only relevant local information.
+    %li
+        %h4 CROSS-PLATFORM
+        %p
+            Access Pulse from any iOS, Android or BB10 smartphone.  No downloads or installation required.
+    .clear
+{% endblock %}

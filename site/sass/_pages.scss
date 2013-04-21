@@ -1,0 +1,31 @@
+.pages {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 100px 0 40px;
+
+    h2.heading {
+        font-size: 32px;
+        color: $font-color-md;
+    } // h2.heading
+    p {
+        color: $font-color-md;
+        font-size: 18px;
+        line-height: 1.5;
+    } // p
+
+    ul.help {
+        @include no-list();
+
+        li {
+            margin: 0 0 20px 0;
+
+            h3 {
+                margin: 5px 0;
+            }
+
+            p {
+                margin: 0 0 0 20px;
+            }
+        } // li
+    } // ul.help
+} // .pages

@@ -1,0 +1,10 @@
+$font-color-dk: #343434;
+$font-color-md: #545454;
+$font-color-lt: #848484;
+$font-color-link: #25A9D4;
+
+@mixin no-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} // @mixin no-list

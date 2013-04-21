@@ -1,0 +1,24 @@
+.more-advantages {
+    $item-width: 280px;
+
+    @include no-list();
+    margin: 0 auto;
+    width: ($item-width * 3) + 2;
+
+    li {
+        float: left;
+        margin: 0;
+        padding: 0 20px;
+        width: $item-width;
+        text-align: center;
+
+        h4 {
+            font-size: 18px;
+        }
+
+        p {
+            font-weight: 400;
+            line-height: 1.5;
+        }
+    } // li
+} // .more-advantages

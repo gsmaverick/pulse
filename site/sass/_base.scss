@@ -1,0 +1,25 @@
+* {
+    // Apply a natural box layout model to all elements.
+       -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+} // *
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    font: normal 16px/1.2 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: $font-color-md;
+} // body
+
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
